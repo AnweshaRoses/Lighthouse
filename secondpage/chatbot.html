@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"defer></script>
+    <script src="chatbot.js" defer></script>
+    <script src="reponses.js" defer></script>
+    <script src="chat.js" defer></script>
+</head>
+
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <nav id="navbar">
+        <ul id=animation>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Menu</a></li>
+            <li class="item"><a href="#">Reserve</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="heading">How are you feeling today?</h1>
+    <div class="emoji-container">
+        <div class="emoji ">
+            <a id="rade"  href="#blog-rad"><i class="fa-regular fa-face-grin-squint"></i></a>
+            <span>Rad</span>
+        </div>
+        <div class="emoji">
+            <a id="happye" href="#blog-happy"><i class="fa-regular fa-face-smile"></i></a>
+            <span>Happy</span>
+        </div>
+        <div class="emoji">
+            <a id="notte" href="#blog-not"><i class="fa-regular fa-face-frown-open"></i></a>
+            <span>Not Bad</span>
+        </div>
+        <div class="emoji">
+            <a id="bade"  href="#blog-bad"><i class="fa-regular fa-face-frown"></i></a>
+            <span>Bad</span>
+        </div>
+        <div class="emoji">
+            <a id="awefule" href="#blog-aweful"><i class="fa-regular fa-face-sad-tear"></i></a>
+            <span>Aweful</span>
+        </div>
+    </div>
+    <section id="blog-rad"  class="blog rad">
+        <!-- heading -->
+        <div class="blog-heading">
+            <!-- <span>My recent posts</span> -->
+            <h3>My blogs</h3>
+            <!-- Blog container -->
+            <div class="blogcontainer">
+                <!-- box1 -->
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog-happy" class="happy blog">
+        <!-- heading -->
+        <div class="blog-heading">
+            <!-- <span>My recent posts</span> -->
+            <h3>My blogs</h3>
+            <!-- Blog container -->
+            <div class="blogcontainer">
+                <!-- box1 -->
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog-not" class="not blog">
+        <!-- heading -->
+        <div class="blog-heading">
+            <!-- <span>My recent posts</span> -->
+            <h3>My blogs</h3>
+            <!-- Blog container -->
+            <div class="blogcontainer">
+                <!-- box1 -->
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog blog-bad" class="bad">
+        <!-- heading -->
+        <div class="blog-heading">
+            <!-- <span>My recent posts</span> -->
+            <h3>My blogs</h3>
+            <!-- Blog container -->
+            <div class="blogcontainer">
+                <!-- box1 -->
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog blog-aweful" class="aweful">
+        <!-- heading -->
+        <div class="blog-heading">
+            <!-- <span>My recent posts</span> -->
+            <h3>My blogs</h3>
+            <!-- Blog container -->
+            <div class="blogcontainer">
+                <!-- box1 -->
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <!-- image -->
+                    <div class="blogImg">
+                        <img  src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="blogtext">
+                        <span>11 Feb 2021/ Friday</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ut iure laudantium corrupti omnis aut, earum amet. Rem alias qui commodi ipsum blanditiis magni officiis minima quis maxime rerum?</p>
+                        <button class="blogbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+
+    </section>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
