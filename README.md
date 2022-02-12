@@ -1,2 +1,2 @@
 # Lighthouse
- Mental Health website for Kuringi
+ Mental Health website for Kurinji
