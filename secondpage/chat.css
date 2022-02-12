@@ -222,6 +222,7 @@ background-color: #ffd8d8;
 /* ChatBot CSS---------------------------------------- */
 
 .chat-bar-collapsible {
+    z-index: 1000;
     position: fixed;
     bottom: 0;
     right: 50px;
@@ -408,17 +409,6 @@ background-color: #ffd8d8;
 }
 footer
 {
-    /* position: relative;
-    padding: 20px 50px;
-    left: 0;
-    bottom: 0;
-    min-height: 100px;
-    background: #3586ff;
-    width: 100%;
-    color: white;
-    text-align: center;
-    z-index: -1; 
-    margin-top: 134vh; */
     position: relative; 
     width: 100%;
     background: #3586ff;
