@@ -20,6 +20,9 @@ We have various features on our website like:
 
 5.  Last but not the least we have also provided numbers of some pychartarists and therapists whom you can contact in case you have a problem.
 
+6.  Chatbot,  which is always there at your service.
+
+7.  Blogs/Articles according to your mood, for you to read and relax.
 
 
 ## Authors
