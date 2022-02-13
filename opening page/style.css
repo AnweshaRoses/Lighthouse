@@ -134,11 +134,13 @@ nav ul li a.active
 }
 .content{
     width: 100%;
-    background:rgb(156, 65, 231);
+    background:#D3BCDC;
     min-height: 100vh;
     z-index: 2;
     position: absolute;
     z-index: 20;
+   
+    
 }
 .content-images{
     display: flex;
@@ -146,6 +148,8 @@ nav ul li a.active
     align-items: center;
     min-height: 20vh;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
 }
 .text{
     padding: 2rem 5rem;
@@ -329,4 +333,79 @@ nav ul li a.active
     height: 100vh;
     overflow-y: hidden;
   }
+
+  .content
+  {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h3
+  {
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 10px 10px;
+    color:  #A87CBA;
+    text-decoration: underline;
+    text-shadow: rgb(64, 5, 87) 2px 2px 2px;
+  }
   
+  .intro
+  {
+    text-align: center;
+    margin-top: 2px;
+    color:#A87CBA;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+  }
+
+  .breathe
+  {
+    font-size: 3em;
+    text-align: left;
+    padding: 5px 170px;
+    color: #fff;
+    font-family: 'Festive', cursive;
+  }
+
+  .relax
+  {
+    font-size: 3em;
+    text-align: right;
+    padding: 50px 170px;
+    color: #fff;
+    font-family: 'Festive', cursive;
+
+  }
+
+  .elab
+  {
+    font-size: 1.3rem;
+    padding: 5px 70px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+
+h4
+  {
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 10px 10px;
+    color:  #A87CBA;
+    text-decoration: underline;
+    text-shadow: rgb(64, 5, 87) 2px 2px 2px;
+}
+
+.highlights
+{
+  display: relative;
+  font-size: 1.3rem;
+  padding: 5px 70px 70px 70px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10;
+}
