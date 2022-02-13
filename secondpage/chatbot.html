@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"defer></script>
+    <script src="chatbot.js" defer></script>
+    <script src="reponses.js" defer></script>
+    <script src="chat.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="lighthouse.png">
+</head>
+
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <nav id="navbar">
+        <ul id=animation>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="./note/index.html">Your Diary</a></li>
+            <li class="item"><a href="./meditat/meditate.html">Meditate</a></li>
+            <li class="item"><a href="#">Reserve</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="heading">How are you feeling today?</h1>
+    <div class="top-box-container">
+        <div class="emoji-container">
+            <div class="emoji ">
+                <a id="rade"  href="#blog-rad"><i class="fa-regular fa-face-grin-squint"></i></a>
+                <span>Rad</span>
+            </div>
+            <div class="emoji">
+                <a id="happye" href="#blog-happy"><i class="fa-regular fa-face-smile"></i></a>
+                <span>Happy</span>
+            </div>
+            <div class="emoji">
+                <a id="notte" href="#blog-not"><i class="fa-regular fa-face-frown-open"></i></a>
+                <span>Not Bad</span>
+            </div>
+            <div class="emoji">
+                <a id="bade"  href="#blog-bad"><i class="fa-regular fa-face-frown"></i></a>
+                <span>Anxious</span>
+            </div>
+            <div class="emoji">
+                <a id="awefule" href="#blog-aweful"><i class="fa-regular fa-face-sad-tear"></i></a>
+                <span>Stressed</span>
+            </div>
+    
+        </div>
+        <section id="blog-rad"  class="blog rad">
+            <!-- heading -->
+            <div class="blog-heading">
+                <!-- <span>My recent posts</span> -->
+                <h3> Blogs based on your mood</h3>
+                <!-- Blog container -->
+                <div class="blogcontainer">
+                    <!-- box1 -->
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFwcHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>The art of Smiling</span>
+                            <p>Actually, there isn’t any art behind it. Just that you were born to be happy, and you can show this happiness with that beautiful smile of yours. Cmon! Lets see it. :) Okay, good.To some extent, we all know how to spot a genuine smile, basically this formula: Genuine Smile = Crinkly Eyes</p>
+                            <form action="https://thinksimplenow.com/happiness/the-art-of-smiling/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>7 Habbits of happy people</span>
+                            <p>Highly happy people all share happy habits. It’s as simple as that. The happiest people I know share 7 very obvious habits. If you’re looking to expand your general happiness you may consider adopting these habits in your own life.</p>
+                            <form action="https://www.marcandangel.com/2008/06/05/the-7-habits-of-highly-happy-people/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1509909756405-be0199881695?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>17 things extremely happy people say </span>
+                            <p>There’s an easy-to-articulate, hard-to-implement best practice when it comes to how to teach yourself to be happy.In effect, doing little things to make other people happy can greatly improve your happiness. Read through to find what extremely happy people say every day.
+                            </p>
+                            <form action="https://time.com/69058/17-things-extremely-happy-people-say-every-day/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-happy" class="happy blog">
+            <!-- heading -->
+            <div class="blog-heading">
+                <!-- <span>My recent posts</span> -->
+                <h3> Blogs based on your mood</h3>
+                <!-- Blog container -->
+                <div class="blogcontainer">
+                    <!-- box1 -->
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1590698933947-a202b069a861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGFwcHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Tips for four weeks of isolation</span>
+                            <p>During the past two decades, psychological research has revealed that the key to a happy life is to experience bursts of positive emotion throughout the day. Read more to know about the weekly journey to a happy life.</p>
+                            <form action="https://www.psychologytoday.com/intl/blog/how-happiness/202003/how-hold-happiness-when-your-world-collapses">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                            
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1524117074681-31bd4de22ad3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>How to be happy</span>
+                            <p>If there is one thing that people across nationalities and political views can agree on, it’s that they want to be happy. This article talks about happiness in detail!</p>
+                            <form action="https://www.psychologytoday.com/intl/blog/how-happiness/201802/how-be-happy-step-1-figure-out-what-happy-means">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhhcHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Does Money really buy Happiness?</span>
+                            <p>Much has been said and written about whether money makes people happy, and the conclusions offered can differ radically.Indeed, the data are confusing and contradictory, but I believe that I can offer some reasoned, data-based conclusions.</p>
+                            <form action="https://www.psychologytoday.com/intl/blog/how-happiness/201409/does-money-really-buy-happiness">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-not" class="not blog">
+            <!-- heading -->
+            <div class="blog-heading">
+                <!-- <span>My recent posts</span> -->
+                <h3> Blogs based on your mood</h3>
+                <!-- Blog container -->
+                <div class="blogcontainer">
+                    <!-- box1 -->
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1631710142503-bae5ccd372a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=759&q=80 alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>22 ways to get over bad mood</span>
+                            <p>Waking up in a funk a little too often, or finding it hard to kick those negative vibes? Look no further…It’s International Day of Happiness, and quite perfectly spell check turned this into Internal Day of Happiness, which I think sums it all up, entirely!</p>
+                            <form action="https://medium.com/@DaveCorn/22-ways-to-get-rid-of-a-bad-mood-3aed5150f15f
+                            ">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1562243953-361c36739de2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Turn a Bad mood to a good mood</span>
+                            <p>Forget the fact the world is in the grips of one of the worst pandemic in history and spend the next few minutes humoring me. See if I can take you from a crap mood to a less crap one with this totally unproven methodology.</p>
+                            <form action="https://thebookofeveryone.com/blog/turn-a-bad-mood-into-a-good-mood/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1620899210251-574e1361453c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Breaking bad moods</span>
+                            <p>We have all had a case of the blues. You know, those times in our lives where the world looks bleak and things just don’t seem to be going in our favor.Finding yourself in a funk you cannot seem to shake, dig into this article.</p>
+                            <form action="https://www.goodtherapy.org/blog/breaking-bad-moods-15-self-care-tips-for-shaking-the-funk-youre-in/amp/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-bad" class="bad blog">
+            <!-- heading -->
+            <div class="blog-heading">
+                <!-- <span>My recent posts</span> -->
+                <h3> Blogs based on your mood</h3>
+                <!-- Blog container -->
+                <div class="blogcontainer">
+                    <!-- box1 -->
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1613312328068-c9b6b76c9e8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>11 things people do when they are anxious</span>
+                            <p>I wrote this article because there are a lot of symptoms that people don’t even realize are anxiety. I used to think I had cancer, or had some sort of brain tumor because I was having such awful and psychical symptoms. Turns out? It was anxiety.
+                            </p>
+                            <form action="https://thoughtcatalog.com/lauren-jarvis-gibson/2016/09/11-things-people-dont-realize-you-are-doing-because-of-your-anxiety/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1620302044615-3883082d075a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>This is how I kicked my anxiety</span>
+                            <p>This is a must read blog where the author tells how to kick anxiety out of your life by just introducing some easy to follow new rules in your life!</p>
+                            <form action="https://thoughtcatalog.com/lo-bosworth/2017/04/this-is-how-i-kicked-my-anxiety-in-the-gut-and-beat-it-for-good/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1584447128309-b66b7a4d1b63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1085&q=80" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>What anxiety really is</span>
+                            <p>This piece by Kirsten Corley effortlessly details what anxiety actually is and what anxiety actually feels like. Read this when you feel like no one understand what you are going through.</p>
+                            <form action="https://thoughtcatalog.com/kirsten-corley/2017/01/what-anxiety-actually-is-because-its-more-than-just-worrying/">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-aweful" class="aweful blog">
+            <!-- heading -->
+            <div class="blog-heading">
+                <!-- <span>My recent posts</span> -->
+                <h3> Blogs based on your mood</h3>
+                <!-- Blog container -->
+                <div class="blogcontainer">
+                    <!-- box1 -->
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1621252179027-94459d278660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RyZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Stress: Why does it happen?</span>
+                            <p>Stress is a natural feeling of not being able to cope with specific demands and events. However, stress can become a chronic condition if a person does not take steps to manage it. This article talks in detail about stress.</p>
+                            <form action="https://www.medicalnewstoday.com/articles/145855#definition">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>10 ways to ease stress</span>
+                            <p>Stress can be positive or negative and there are healthy ways to deal with it.This piece of writing talks about the few easy to follow steps to ease stress as if it was never there.
+                            </p>
+                            <form action="https://my.clevelandclinic.org/health/articles/8133-stress-10-ways-to-ease-stress">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="blogbox">
+                        <!-- image -->
+                        <div class="blogImg">
+                            <img  src="https://images.unsplash.com/photo-1527236438218-d82077ae1f85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3RyZXNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="blogtext">
+                            <span>Effects of stress on your body</span>
+                            <p>Stress is a normal part of life. Many events that happen to you and around you, put stress on your body. You can experience good or bad forms of stress from your environment, your body, and your thoughts. Read more to find out more!</p>
+                            <form action="https://www.webmd.com/balance/stress-management/effects-of-stress-on-your-body">
+                                <input class="blogbtn" type="submit" value="Read More" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <!-- <ul class="social-icon">
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="mail-open-outline"></ion-icon></ion-icon></a></li>
+                </ul> -->
+                <a href="https://unitedgmh.org/mental-health-support" class="hotline">find your national hotline for professional help here</a>
+                <!-- <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> -->
+               
+                <p>@2022 Lighthouse | All Rights Reserved</p>
+        </footer>
+    </div>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- <section id="footer"> -->
+
+    <!-- </section> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

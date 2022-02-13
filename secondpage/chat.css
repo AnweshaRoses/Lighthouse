@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&family=Oswald&display=swap');
+*
+{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none ;
+    color: white;
+}
+/* Navbar CSS */
+:root{
+    --navbar-height:59px;
+}
+/* Navbar */
+#navbar
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+ 
+
+}
+
+/* List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Ultra', serif;
+   
+}
+
+#navbar::before{
+    content: "";
+    /* background-color: lightsteelblue; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: large;
+
+}
+#navbar ul li a{
+    /* color: #b2f6d0; */
+    color: #e6356e;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+/* Hover Effects  */
+ #navbar ul li a:hover{
+    /* color: #7575d5; */
+    color: teal;
+}
+
+/* Emoji Container CSS-------------------------------------- */
+.emoji-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+.emoji{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.fa-regular{
+    cursor: pointer;
+    font-size: 32px;
+}
+.emoji span{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.heading{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+/* Blog CSS--------------------------------------- */
+#blog{
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-heading span{
+    color: green;
+}
+.blog-heading h3{
+    margin-top: 40vh;
+    font-size: 2.5em;
+    color: #e2e2e2;
+    font-weight: 600;
+}
+.blogcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap:wrap ;
+}
+.blogbox{
+    width: 350px;
+    background-color: white;
+    border: 1px solid rgb(209, 208, 208);
+    margin: 20px;
+}
+.blogImg{
+    width: 100%;
+    height: auto;
+}
+.blogImg img{
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+.blogtext{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blogtext span{
+    color: #ff5d79;
+    font-size: 0.9rem;
+}
+.blogtext p{
+    color: #7f7d7d;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: hidden;
+    margin: 20px 0px;
+}
+.blogbtn{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #e3e3e3;
+    color:#ff5d79; 
+}
+.blogbtn:hover{
+background-color: #ffd8d8;
+}
+
+.rad{
+    visibility: hidden;               
+    max-height: 0;
+}
+.rad.active{
+    visibility: visible;               
+}
+.happy{
+    visibility: hidden;               
+    max-height: 0;
+}
+.happy.active{
+    visibility: visible;               
+}
+.not{
+    visibility: hidden;               
+    max-height: 0;
+}
+.not.active{
+    visibility: visible;               
+}
+.bad{
+    visibility: hidden;               
+    max-height: 0;
+}
+.bad.active{
+    visibility: visible;
+}
+.aweful{
+    visibility: hidden;
+    max-height: 0;
+}
+.aweful.active{
+    visibility: visible;
+}
+
+
+
+
+/* ChatBot CSS---------------------------------------- */
+
+.chat-bar-collapsible {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color: rgb(82, 151, 255);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}
+
+/*for the national hotline line */ 
+.hotline
+{
+    align-items: center;
+    display: flex;
+    font-size: 1.3em;
+    color: black;
+    margin-bottom: 10px;
+}
+footer
+{
+    position: relative; 
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 134vh;
+    
+}
+
+
+footer .social-icon,
+footer .menu
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social-icon li,
+footer .menu li
+{
+    list-style: none;
+}
+
+footer .social-icon li a
+{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social-icon li a:hover
+{
+    transform: translateY(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.5;
+}
+footer .menu li a:hover
+{
+    opacity: 1; 
+}
+footer p
+{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    opacity: 0.5;
+}
+
+footer .wave
+{
+    position: absolute;
+    bottom: 0;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave 
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
