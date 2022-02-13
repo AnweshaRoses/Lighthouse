@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div><button id="music-btn">
+            <i class="fas fa-music"></i>
+        </button></div>
+        <div class="card-container">
+            <div class="music-card">
+                <span><button id="close-pl">&times;</button></span>
+                <div id="song1" class="cards">
+                <img src="music/YirumaForestFantasy.jpeg"  data-sound="Yiruma - Forest Fantasy " alt="">
+               <h2  class="card-title">
+                Yiruma - Forest Fantasy 
+               </h2>
+               </div>
+               <div id="song2"  class="cards">
+                <img src="music/SleepingAtLastLight.jpeg"  data-sound="Sleeping At Last-Light" alt="">
+               <h2  class="card-title">
+                Sleeping At Last -  "Light"  
+               </h2>
+               </div>
+               <div id="song3"  class="cards">
+                <img src="music/SleepingAtLastSaturn.jpeg"  data-sound="Sleeping At Last - Saturn" alt="">
+               <h2 class="card-title">
+                Sleeping At Last - "Saturn"
+               </h2>
+               </div>
+               <div id="song4" class="cards" >
+                <img src="music/YimuraRiverflowsintoyou.jpeg" alt="">
+               <h2 class="card-title" data-sound="Yiruma - River flows into you">
+                Yiruma - River flows into you
+               </h2>
+               </div>
+               <div id="song5" class="cards">
+                <img src="music/ChopinNoctune.jpeg" alt="">
+               <h2 class="card-title" data-sound=" Chopin - Nocturne op.9 No.2">
+                Chopin - Nocturne op.9 No.2
+               </h2>
+               </div>
+               <div id="song6" class="cards">
+                <img src="music/HappinessKalimba.jpeg" alt="">
+               <h2 class="card-title" data-sound="Happiness-Kalimba">
+                Happiness-Kalimba
+               </h2>
+               </div>
+          
+            <div class="musicContainer ">
+            <div class="musicinfo">
+                <h4 id="title">Song1</h4>
+                <div class="progressContainer">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <audio src="music/music1.mp3" id="audio"></audio>
+            <div class="imgcontainer">
+                <img src="music/1.jpg" id="cover" alt="">
+            </div>
+            <div class="nav">
+                <button id="previous" class="actionbtn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="actionbtn big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="actionbtn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- <p>
+        Paint by holding down the mouse button and moveing it.
+        <a href="" download="my_painting.png">Download my painting</a
+        ><i class="fa fa-refresh refresh-btn"><strong>Clear</strong></i>
+    </p> -->
+
+    <div class="paint-box">
+        <div id="pen-tools" class="pen-tools">
+            <div id="drawing-colors" class="drawing-colors">
+                <button class="btn-clear"><i class="fa fa-refresh refresh-btn"><strong>Clear</strong></i></button>
+              <div
+                class="color-circle active"
+                data-color="hotpink"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="orange"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="red"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="yellow"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="black"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="blue"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="white"
+                onclick="selectColor(this)"
+              ></div>
+              <div
+                class="color-circle"
+                data-color="green"
+                onclick="selectColor(this)"
+              ></div>
+            </div>
+            <!-- <div id="favContainer">
+              <label for="favcolor">Select your favourite color:</label>
+              <input
+                type="color"
+                name="favcolor"
+                id="favcolor"
+                value="#ff0000"
+                onchange="favColor(this)"
+              />
+            </div> -->
+            <div id="pen-size" class="pen-size">
+              <label for="pen-size"><i class="fa fa-pencil"></i> Pen size</label>
+              <input
+                type="range"
+                name="pen-size"
+                id="pen-size"
+                value="10"
+                step="5"
+                min="5"
+                max="40"
+                onchange="penSizeChange(this.value)"
+              />
+            </div>
+        </div>
+        <div class="board">
+          <canvas width="800px" height="590"></canvas>
+        </div>
+    </div>
+  
+</body>
+<script src="index.js"></script>
+</html>
