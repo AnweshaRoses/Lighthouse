@@ -10,6 +10,12 @@ const progressCContainer=document.querySelector('.progressContainer')
 const title=document.querySelector('#title')
 const cover=document.querySelector('#cover')
 const colorCircle = document.querySelectorAll(".color-circle");
+const Song1=document.querySelector('#song1')
+const Song2=document.querySelector('#song2')
+const Song3=document.querySelector('#song3')
+const Song4=document.querySelector('#song4')
+const Song5=document.querySelector('#song5')
+const Song6=document.querySelector('#song6')
 
 
 let penSize = 10;
@@ -39,12 +45,12 @@ hide.onclick = function() {
   }
 
 const songs=[
-    'music1',
-    'music2',
-    'music3',
-    'music4',
-    'music5',
-    'music6'
+    'YirumaForestFantasy',
+    'SleepingAtLastLight',
+    'SleepingAtLastSaturn',
+    'YimuraRiverflowsintoyou',
+    'ChopinNoctune',
+    'HappinessKalimba'
 ]
 
 // Keeping tracks of songs
@@ -125,6 +131,31 @@ playbtn.addEventListener('click',()=>{
     else{
         playSong()
     }
+})
+// Changing songs on click
+Song1.addEventListener('click',()=>{
+  loadSong(songs[0]);
+  playSong();
+})
+Song2.addEventListener('click',()=>{
+  loadSong(songs[1]);
+  playSong();
+})
+Song3.addEventListener('click',()=>{
+  loadSong(songs[2]);
+  playSong();
+})
+Song4.addEventListener('click',()=>{
+  loadSong(songs[3]);
+  playSong();
+})
+Song5.addEventListener('click',()=>{
+  loadSong(songs[4]);
+  playSong();
+})
+Song6.addEventListener('click',()=>{
+  loadSong(songs[5]);
+  playSong();
 })
 
 // Change Songs 
