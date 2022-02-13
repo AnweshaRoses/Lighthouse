@@ -3,7 +3,7 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://kit.fontawesome.com/c8a2b18e51.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href=".style.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&family=Oswald&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="lighthouse.png">
       </head>
@@ -23,11 +23,11 @@
             <div class="container">
                 <h2 class="main-title">Yours Truly</h2>
                 <!--attribution:<a href='https://www.freepik.com/vectors/lighthouse'>Lighthouse vector created by upklyak - www.freepik.com</a>-->
-                <img src=".cloud.png" class="cloud" alt=""/>
-                <img src=".moon.png" class="moon" alt=""/>
-                <img src=".lake.png" class="lake" alt=""/>
-                <img src=".lighthouse.png" class="lighthouse" alt=""/>
-                <img src=".bird.png" class="bird" alt=""/>
+                <img src="cloud.png" class="cloud" alt=""/>
+                <img src="moon.png" class="moon" alt=""/>
+                <img src="lake.png" class="lake" alt=""/>
+                <img src="lighthouse.png" class="lighthouse" alt=""/>
+                <img src="bird.png" class="bird" alt=""/>
             </div>
             <div class="content">
                 
@@ -48,7 +48,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" integrity="sha512-O+atZ/gABlcFlpIoLQR04f72qHqZWKwTVsQZHqk/8VE2nrzDlnqhXbnXP7Gh/TyhpPT8tEUm5A580GG8AloHTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src=".script.jsx"></script>
+        <script src="script.jsx"></script>
 
         <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -81,6 +81,27 @@
           <div class="sign-txt">Not yet member?<p><a href="#">Signup now</a></p></div>
         </div>
       
+    </div>
+<div id="guestModal" class="modal">
+
+    <!-- Modal content -->
+   
+      <div class="wrapper">
+          <span class="close">&times;</span>
+          <header>Login Form</header>
+          <form action="#">
+            <div class="field email">
+              <div class="input-area">
+                <input type="text" placeholder="Enter Your Name">
+                <i class="icon fas fa-envelope"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div class="error error-txt">Name Can't be blank</div>
+            </div>
+            <input type="submit" value="Continue">
+          </form>
+          <div class="sign-txt">Not yet member?<p><a href="#">Signup now</a></p></div>
+        </div>
     </div>
   
   <script>
