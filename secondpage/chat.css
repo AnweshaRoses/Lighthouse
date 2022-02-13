@@ -325,6 +325,7 @@ background-color: #fff;
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
     padding: 10px 0px 10px 10px;
+    z-index: 20000;
 }
 
 .chat-bar-icons {
@@ -334,6 +335,8 @@ background-color: #fff;
     width: 25%;
     float: right;
     font-size: 20px;
+    background-color: #ebebeb;
+
 }
 
 #chat-icon:hover {
@@ -434,15 +437,6 @@ background-color: #fff;
 }
 
 /*for the national hotline line */ 
-.hotline
-{
-    align-items: center;
-    display: flex;
-    font-size: 1.3em;
-    color: black;
-    margin-bottom: 10px;
-    background-color: #A87CBA;
-}
 footer
 {
     position: relative; 
@@ -507,8 +501,8 @@ footer p
 {
     color: white;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
     font-size: 1.1em;
     opacity: 0.5;
     background-color: #A87CBA;
@@ -525,6 +519,15 @@ footer .wave
     background: url(purple-wave.png);
     background-size: 1000px 100px;
     
+}
+.hotline
+{
+    align-items: center;
+    display: flex;
+    font-size: 1.3em;
+    color: black;
+    /* margin-bottom: 10px; */
+    background-color: #A87CBA;
 }
 footer .wave#wave1
 {
