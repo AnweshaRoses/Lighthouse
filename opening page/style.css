@@ -373,7 +373,7 @@ nav ul li a.active
   {
     font-size: 3em;
     text-align: right;
-    padding: 50px 170px;
+    padding: 5px 170px;
     color: #fff;
     font-family: 'Festive', cursive;
 
@@ -401,11 +401,9 @@ h4
 
 .highlights
 {
-  display: relative;
   font-size: 1.3rem;
-  padding: 5px 70px 70px 70px;
+  padding: 5px 70px;
   justify-content: center;
   text-align: center;
   font-family: 'Nunito', sans-serif;
-  margin-bottom: 10;
 }
