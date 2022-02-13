@@ -134,6 +134,8 @@ nav ul li a.active
     z-index: 2;
     position: absolute;
     z-index: 20;
+   
+    
 }
 .content-images{
     display: flex;
@@ -141,6 +143,8 @@ nav ul li a.active
     align-items: center;
     min-height: 20vh;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
 }
 .text{
     padding: 2rem 5rem;
