@@ -42,10 +42,13 @@ const songs=[
     'music1',
     'music2',
     'music3',
+    'music4',
+    'music5',
+    'music6'
 ]
 
 // Keeping tracks of songs
-let songIndex=2
+let songIndex=0
 
 // Initially load song
 loadSong(songs[songIndex])
@@ -53,10 +56,11 @@ loadSong(songs[songIndex])
 // update song details 
 
 function loadSong(song){
-    title.innerText=song
+    title.innerText=song;
     audio.src = `music/${song}.mp3`;
-     cover.src=`music/${song}.jpeg`
+    cover.src=`music/${song}.jpeg`;
 }
+
 
 function playSong(){
 musicCContainer.classList.add('play')
