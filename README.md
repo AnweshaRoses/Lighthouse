@@ -3,7 +3,11 @@
 
 This is a website that we have created as a project on mental health for the Kurinji hackathon.
 
+You can click on the links given below to visit our website:
 
+https://www.your-lighthouse.co/
+
+https://anwesharoses.github.io/Lighthouse/
 
 
 ## Appendix
